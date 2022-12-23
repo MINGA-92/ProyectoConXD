@@ -1,0 +1,313 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Principal</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+  <body class="page">
+    <section id="home" class="page-head" width=3000 height=2000>
+        <div class="row">
+            <div class="overlay"></div>
+            <div class="shadow-overlay"></div>
+            <div class="page-head">
+                <div class="row home-content__main">
+                    <!-- <img src="{{ module_asset_url("Curvas%201.png") }}"/> -->
+                    <img src="img/Curvas 1.png"/>
+                    <h1>ESTUDIA <br> INGENERÍA CIVIL</h1>            
+                    <p class="unnamed-character-style-3">
+                        ¡Forma parte de la generación que concibe, <br>
+                        diseña y construye obras de infraestructura <br>
+                        con responsabilidad social! <b>#ElijoSerEscuela</b> <br>
+                    </p>
+                    <div class="unnamed-character-style-4">
+                        <input class="page-head-presencial" type="submit" value="Programa presencial en Bogotá"></input>
+                    </div>
+                </div>
+
+                <div class="form">
+                    <div class="container">
+                        <div class="row-cols-1"> 
+                            <form id="frmCrear">
+                                <div class="mb-0">
+                                    <label for="Nombres" class="form-label text-dark" style="margin-top: 2%;">Nombres: </label>
+                                    <input class="form-control" type="text" id="Nombres" name="Nombres">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="Apellidos" class="form-label text-dark" style="margin-top: 2%;">Apellidos: </label>
+                                    <input class="form-control" type="text" id="Apellidos" name="Apellidos">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="Correo" class="form-label text-dark" style="margin-top: 2%;">Correo Electronico: </label>
+                                    <input class="form-control" type="email" id="Correo" name="Correo">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="Telefono" class="form-label text-dark" style="margin-top: 2%;">Numero De Telefono: </label>
+                                    <input class="form-control" type="number" id="Telefono" name="Telefono">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="CiudadOrigen" class="form-label text-dark" style="margin-top: 2%;">Ciudad De Origen: </label>
+                                    <input style="position: relative;" class="form-control" type="text" id="CiudadOrigen" name="CiudadOrigen">
+                                </div>
+
+                                <div class="mb-0" style="margin-top: 2%;">
+                                    <label for="TipoDocu" class="form-label text-dark">Tipo De Documento:</label>
+                                    <select class="form-select" id="TipoDocu" name="TipoDocu">
+                                        <option disabled selected>Elige Una Opcion</option>
+                                        <option value="CC">CC</option>
+                                        <option value="CE">CE</option>
+                                        <option value="TI">TI</option>
+                                        <option value="RC">RC</option>
+                                        <option value="PAS">PAS</option>
+                                    </select>
+                                </div>
+                                <div class="mb-0">
+                                    <label for="Identificacion" class="form-label text-dark" style="margin-top: 2%;">Numero De Identificacion: </label>
+                                    <input style="position: relative;" class="form-control" type="number" id="Identificacion" name="Identificacion">
+                                </div>
+                                <div class="mb-0">
+                                    <label for="PeriodoAdmisión" class="form-label text-dark" style="margin-top: 2%;">Periodo de Admisión deseado: </label>
+                                    <input class="form-control" type="text" id="PeriodoAdmisión" name="PeriodoAdmisión">
+                                </div>
+                                
+                                <div class="mb-2">
+                                    <button type="button" id="BtnGuardar" class="btn btn-registro" onclick="CapturarDatos()"> ¡Registrate! </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="home-content__line"></div>
+            </div>
+        </div> 
+    </section>
+    <section id="home_1" class="page-head-body" width=3000 height=2000 style="margin-left: -2%;">
+        <div class="row mb-3">
+            <div class="container">
+                <h2 class="h2">Inscripciones Abiertas 2023</h2>
+            </div>
+        </div>
+    </section>
+    
+    <section id="home_2" class="page-head-body" width=3000 height=2000 style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <table id="Tbl" class="table table-bordered text-center mt-4">
+                    <thead class="text-black">
+                        <tr class="border-white">
+                            <!--<th><img src="{{ module_asset_url("T%C3%ADtulo.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("Duraci%C3%B3n.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("Jornada.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("Modalidad.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("Costo.png") }}"/></th>  -->
+                            <th><img src="img/Título.png"/></th>
+                            <th><img src="img/Duración.png"/></th>
+                            <th><img src="img/Jornada.png"/></th>
+                            <th><img src="img/Modalidad.png"/></th>
+                            <th><img src="img/Costo.png"/></th>   
+                        </tr>
+                        <tr class="border-white">
+                            <th>Ingeniero Civil</th>
+                            <th>Diez Semestres</th>
+                            <th>Presencial</th>
+                            <th>Diurna</th>
+                            <th>Costo</th>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-white" style="background-color: white;">          
+                            <td>Título</td>     
+                            <td>Duración</td>          
+                            <td>Modalidad</td>
+                            <td>Jornada</td>
+                            <td>$ 11'500.000</td>
+                        </tr>
+                        <tr class="border-white">          
+                            <td></td>     
+                            <td></td>          
+                            <td></td>
+                            <td></td>
+                            <td>Dependiendo de los <br>
+                                ingresos del grupo <br>
+                                familiar, el costo <br>
+                                por semestre puede <br>
+                                disminuir hasta <br>
+                                $4.700.000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="row mb-3 page-head-body_2">
+                <div class="container">
+                    <h3 class="h3">5 Motivos para estudiar en la Escuela</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <table id="Tbl" class="table table-bordered table-striped text-center mt-4">
+                    <thead class="text-black">
+                        <tr class="border-white">
+                            <th><img src="img/Dron Escuela (1).png"/></th>
+                            <th><img src="img/1_H0A2007.png"/></th>
+                            <th><img src="img/final_H0A2098.png"/></th>
+                            <th><img src="img/1_H0A2152.png"/></th>
+                            <th><img src="img/36176504_1848555515200927_6525709228630343680_n.png"/></th>
+                        </tr>
+                        <!--<tr class="border-white">
+                            <th><img src="{{ module_asset_url("Dron%20Escuela%20(1).png") }}"/></th>
+                            <th><img src="{{ module_asset_url("1_H0A2007.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("final_H0A2098.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("1_H0A2152.png") }}"/></th>
+                            <th><img src="{{ module_asset_url("36176504_1848555515200927_6525709228630343680_n.png") }}"/></th>   
+                        </tr>-->
+                        <tr class="border-white">
+                            <th>142.231 mts2</th>
+                            <th>Matrícula Diferencial</th>
+                            <th>Movilidad Académica</th>
+                            <th>74 Laboratorios</th>
+                            <th>Acreditación Institucional</th>   
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pie_img border-white" style="background-color: white;">          
+                            <td>de campus moderno, seguro y ambientalmente.</td>     
+                            <td>el valor de la matrícula depende de los ingresos del grupo familiar y el valor de la pensión del colegio.​</td>          
+                            <td>en más de 29 países, prácticas profesionales.</td>
+                            <td>y equipos de ultima generacion para estudiantes y la industrria colombiana. </td>
+                            <td>de alta calidad (Renovación Resolución MEN N° 002710)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+  
+        </div>
+    </section>
+
+    <section id="home_3" class="page-body_2" width=3000 height=2000 style="margin-left: -5%; margin-top: 5%;">
+        <div class="container">
+            <div class="row-cols-2">
+
+                <table id="Tbl" class="table table-bordered text-center mt-4">
+                    <thead class="text-black">
+                        
+                    </thead>
+                    <tbody style="background-color: white;">
+                        <tr class="border-white">          
+                            <td>
+                                <iframe width="568" height="328" src="https://www.youtube.com/embed/WBu8KuBvlho" title="Bienvenidos a la Escuela Colombiana de Ingeniería Julio Garavito - recorrido virtual." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </td>     
+                            <td>
+                                <h4 class="h4 text-start" style="margin-top: 5%;">Universidad Escuela<br>Colombiana de Ingeniería<br>Julio Garavito</h4>
+                                <p class="page-body_2-text text-start">
+                                    Universidad de carácter privado que cuenta con <br>
+                                    12 carreras profesionales, 9 especializaciones, <br>
+                                    10 maestrías, 1 doctorado y más de 100 cursos, ​<br>
+                                    diplomados, seminarios y talleres.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="home_4" class="page-body_2" width=3000 height=2000 style="margin-left: -5%; margin-top: -28%;">
+        <div class="container page-head-body_2">
+            <div class="row-cols-2" style="margin-left: 11%;">
+
+                <table id="Tbl" class="table table-bordered text-center mt-8">
+                    <thead class="text-black">
+                        <tr class="border-white">
+                            <th class="text-start"><img src="img/Grupo 12.svg"/><br>
+                                <br>Programa</th>
+                            <th class="text-start"><img src="img/Grupo 3.svg"/><br>
+                                <br>Beneficios y Apoyo <br>finaciero</th>
+                            <th class="text-start"><img src="img/Cuadrícula de repetición 1.svg"/><br>
+                                <br>Perfil de Graduado</th>
+                        </tr>
+                        <!--<tr class="border-white">
+                            <th class="text-start"><img src="{{ module_asset_url("Grupo%2012.svg") }}"/><br>
+                                <br>Programa</th>
+                            <th class="text-start"><img src="{{ module_asset_url("Grupo%203.svg") }}"/><br>
+                                <br>Beneficios y Apoyo <br>finaciero</th>
+                            <th class="text-start"><img src="{{ module_asset_url("Cuadr%C3%ADcula%20de%20repetici%C3%B3n%201.svg") }}"/><br>
+                                <br>Perfil de Graduado</th>
+                        </tr>-->
+                    </thead>
+                    <tbody style="background-color: white;">
+                        <tr class="border-white">          
+                            <td>
+                                <p class="page-body_3-text">
+                                    El está orientado a la aplicación de conocimientos específicos <br>
+                                    en planeación, realización, administración y control de diseños <br>
+                                    y proyectos de infraestructura física, encaminados al desarrollo <br>
+                                    sostenible en beneficio de la sociedad. El programa de Ingeniería <br>
+                                    Civil de la Escuela Colombiana de Ingeniería Julio Garavito te brinda <br>
+                                    la oportunidad de elegir una de las siguientes líneas de profundización, <br>
+                                    de acuerdo con tus intereses y la demanda del mercado: Áreas de Especialidad: <br>
+                                    Materiales, estructuras y construcción Hidráulica Ingeniería ambiental <br>
+                                    Geotecnia Vías y transporte.
+                                </p>
+                            </td>
+                            <td class="page-body_3-text">
+                                <p>
+                                    Tenemos las puertas abiertas para los estudiantes y sus familias.<br>
+                                    <br>
+                                    La Oficina de Apoyo Financiero de la Universidad Escuela Colombiana <br>
+                                    de Ingeniería Julio Garavito es la encargada de acompañar en el proceso <br>
+                                    de financiación y pago de la matrícula a los estudiantes y sus familias, <br>
+                                    por medio de beneficios internos como descuentos, crédito directo, auxilios <br>
+                                    y becas, además de alianzas estratégicas con entidades financieras, <br>
+                                    entes territoriales, empresas privadas y fundaciones.<br>
+                                    Línea de atención: +57(1) 668 3600 
+                                </p>
+                            </td>    
+                            <td>
+                                <p class="page-body_3-text">
+                                    Graduado con actitud innovadora y espíritu de investigación para concebir, <br>
+                                    diseñar e implementar soluciones en infraestructura física, obras hidráulicas, <br>
+                                    medioambiente, estructuras, geotecnia y vías y transporte.<br>
+                                    Capacitado en diseño, construcción, control, asesoramiento, planeación, <br>
+                                    cuantificación, administración, gestión, organización e inspección <br>
+                                    de proyectos de infraestructura.
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="home_5" class="page-head-body" width=3000 height=2000 style="margin-left: -2%; margin-top: -11%;">
+        <div class="row mb-3">
+            <div class="container" style="margin-left: 5%;">
+                <h2 class="h2">Plan de Estudios</h2>
+                <div class="container page-head-body_2 text-start">
+                    <div class="h1 row">
+                        <p>Descarga el plan de estudios</p>
+                        <h3>Te dejamos más información sobre el programa</h3>
+                        <div class="mb-2 text-end" style="margin-top: -11%;">
+                            <button type="button" id="BtnDescargar" class="btn btn-registro"> Descargar </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.4/sweetalert2.all.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="js/Funciones.js"></script>
+
+  </body>
+</html>
